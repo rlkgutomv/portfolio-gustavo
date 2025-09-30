@@ -6,8 +6,12 @@
 
 body{
   font-family: Arial, Helvetica, sans-serif;
-  background: white;
-  padding: 0;
+  margin: 0;
+  background: linear-gradient(135deg, #0F4C75, #3282B8, #1B262C);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 nav {
@@ -60,7 +64,7 @@ nav a:hover {
   flex-direction: column;    
   align-items: center;        
   justify-content: flex-start;
-   background: linear-gradient(135deg, #0F4C75, #3282B8, #1B262C);
+  background: linear-gradient(135deg, #0F4C75, #3282B8, #1B262C);
   color: white;
   margin: 0;
   padding-top: 150px;          
@@ -105,4 +109,97 @@ nav a:hover {
     cursor: pointer;
     border-radius: 12px;      
     border: 3px solid white;
+}
+
+
+
+
+
+
+
+#sobre{
+  width: 100%;
+  height: 100vh;           
+  color: white;
+  margin: 0;
+  padding-top: 70px;
+  
+  
+           
+}
+
+#sobre h2{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 1.5rem;
+  letter-spacing: 2px; 
+  color: #ffffff;
+  margin-bottom: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+#sobre p{
+
+ font-family: 'Roboto', sans-serif;
+  font-weight: 300; 
+  font-size: 1.2rem; 
+  line-height: 2;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: justify;
+  
+
+}
+
+#sobre h2{
+  font-weight: bold; 
+  font-size: 1.2rem; 
+  line-height: 1.6; 
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: justify;
+  color: #BBE1FA;
+
+}
+
+#sobre h3{
+  font-weight: 300; 
+  font-size: 1.2rem; 
+  line-height: 1.6; 
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: justify;
+
+}
+
+
+.ajustar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  
+}
+
+.balao{
+  border-radius: 20px;
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  max-width: 625px;
+  background: rgba(0, 0, 0, 0.2)
+  
+}
+
+.balao p {
+    font-size: 14px;  
+    line-height: 1.6;  
+    margin-bottom: 6px;
 }
