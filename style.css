@@ -4,6 +4,33 @@
   box-sizing: border-box;
 }
 
+.digitar {
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  padding-bottom: 15px;
+
+}
+#texto {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  color: #BBE1FA;          
+  font-size: 1.5rem;        
+  letter-spacing: 2px;      
+  transition: color 0.3s;   
+}
+
+#texto::after {
+  content: '|';
+  margin-left: 5px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
 body{
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -111,11 +138,22 @@ nav a:hover {
     border: 3px solid white;
 }
 
+.git img {
+  transition: filter 0.3s; 
+}
 
+.git img:hover {
+  filter: invert(100%); 
+}
 
+.linkedin img {
+  transition: filter 0.3s; 
+}
 
-
-
+.linkedin img:hover {
+  content: url('linkbranco.png');
+  border-color: black; 
+}
 
 #sobre{
   width: 100%;
@@ -195,8 +233,20 @@ nav a:hover {
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   max-width: 625px;
   background: rgba(0, 0, 0, 0.2)
+
   
 }
+
+.balao a{
+  text-decoration: none;
+  color: white;
+}
+
+.balao a:hover {
+  text-decoration: underline;
+  color: #BBE1FA;;
+}
+
 
 .balao p {
     font-size: 14px;  
