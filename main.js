@@ -1,13 +1,14 @@
 const frases = [
-  "estudante de Ciência da Computação",
-  "programador",
-  "apaixonado por resolver problemas"
+  "estudante de Ciência da Computação  ",
+  "programador  ",
+  "apaixonado por resolver problemas  ",
+  "futuro desenvolvedor Full Stack  "
 ];
 
 let i = 0;      
 let j = 0;      
 let apagando = false;
-let speed = 75;
+let speed = 90;
 
 function digitar() {
   let texto = frases[i];

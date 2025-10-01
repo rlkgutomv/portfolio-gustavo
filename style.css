@@ -82,6 +82,13 @@ nav a:hover {
   border: 4px solid white;
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
   margin-bottom: 20px;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
 }
 
 #home {
@@ -143,7 +150,8 @@ nav a:hover {
 }
 
 .git img:hover {
-  filter: invert(100%); 
+  filter: invert(100%);
+   transform: scale(1.25);
 }
 
 .linkedin img {
@@ -153,6 +161,7 @@ nav a:hover {
 .linkedin img:hover {
   content: url('linkbranco.png');
   border-color: black; 
+   transform: scale(1.25);
 }
 
 #sobre{
@@ -160,24 +169,34 @@ nav a:hover {
   height: 100vh;           
   color: white;
   margin: 0;
-  padding-top: 70px;
-  
-  
-           
+  padding-top: 85px;     
+}
+
+#sobre h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5em;
+  color: white; 
+  text-align: center;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px rgba(0, 198, 255, 0.7);
 }
 
 #sobre h2{
   font-family: 'Raleway', sans-serif;
-  font-weight: 100;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   letter-spacing: 2px; 
-  color: #ffffff;
+  color: #BBE1FA;
   margin-bottom: 15px;
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 25px;
-  text-align: center;
+  font-weight: bold; 
+  line-height: 1.6; 
+  text-align: justify;
+  
 }
+
+
 
 #sobre p{
 
@@ -192,18 +211,7 @@ nav a:hover {
 
 }
 
-#sobre h2{
-  font-weight: bold; 
-  font-size: 1.2rem; 
-  line-height: 1.6; 
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  text-align: justify;
-  color: #BBE1FA;
 
-}
 
 #sobre h3{
   font-weight: 300; 
@@ -232,9 +240,17 @@ nav a:hover {
   margin: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   max-width: 625px;
-  background: rgba(0, 0, 0, 0.2)
+  background: rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
 
-  
+  opacity: 0;
+  transform: translateY(30px);
+  animation: aparecer 0.8s ease forwards;
+}
+
+.balao:hover {
+   transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 198, 255, 0.4);
 }
 
 .balao a{
@@ -253,3 +269,90 @@ nav a:hover {
     line-height: 1.6;  
     margin-bottom: 6px;
 }
+
+
+
+#habilidades{
+  padding-top: 80px;
+  color: white;
+
+}
+
+#habilidades h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5em;
+  color: white; 
+  text-align: center;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px rgba(0, 198, 255, 0.7);
+
+
+
+}
+
+#habilidades h2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 2px; 
+  color: white;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 25px;
+  font-weight: bold; 
+  line-height: 1.6; 
+  text-align: justify;
+
+  font-size: 28px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+
+}
+
+#habilidades img{
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s; 
+}
+
+#habilidades img:hover {
+   transform: scale(1.1);
+   box-shadow: 0px 0px 15px rgba(255,255,255,0.5);
+   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.caixa{
+  background: rgba(0, 0, 0, 0.4);
+  margin: 50px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: aparecer 0.8s ease forwards;
+}
+
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.centralizar{
+  text-align: center;
+}
+
+.centralizarCaixa{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start
+}
+
+
+
