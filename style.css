@@ -201,7 +201,6 @@ nav a:hover {
 }
 
 #sobre h2 {
-  font-family: 'Raleway', sans-serif;
   font-size: 1.3rem;
   letter-spacing: 2px; 
   color: #BBE1FA;
@@ -212,6 +211,9 @@ nav a:hover {
   font-weight: bold; 
   line-height: 1.6; 
   text-align: justify;
+  font-family: 'Poppins', sans-serif;
+  color: #00c6ff;
+  text-shadow: 0 0 5px rgba(0, 198, 255, 0.5);
 }
 
 #sobre p {
@@ -293,10 +295,8 @@ nav a:hover {
 }
 
 #habilidades h2 {
-  font-family: 'Raleway', sans-serif;
   font-size: 1.3rem;
   letter-spacing: 2px; 
-  color: white;
   margin-bottom: 15px;
   margin-left: 10px;
   margin-right: 10px;
@@ -308,6 +308,9 @@ nav a:hover {
   border-bottom: 2px solid #ccc;
   padding-bottom: 5px;
   margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #00c6ff;
+  text-shadow: 0 0 5px rgba(0, 198, 255, 0.5);
 }
 
 #habilidades img {
@@ -374,10 +377,11 @@ nav a:hover {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   justify-items: center;
+  
 }
 
 .projetoAjuste {
-  background: rgba(255, 255, 255, 0.05);
+background: rgba(0, 0, 0, 0.4);
   border-radius: 20px;
   padding: 20px;
   width: 100%;
@@ -385,6 +389,11 @@ nav a:hover {
   transition: all 0.3s ease;
   text-align: center;
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: aparecer 0.8s ease forwards;
+  
 }
 
 .projetoAjuste:hover {
