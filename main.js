@@ -1,5 +1,5 @@
 const frases = [
-  "estudante de Ciência da Computação  ",
+  "estudante da Ciência da Computação  ",
   "programador  ",
   "apaixonado por resolver problemas  ",
   "futuro desenvolvedor Full Stack  "
