@@ -5,12 +5,11 @@
 }
 
 .digitar {
-
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
   padding-bottom: 15px;
-
 }
+
 #texto {
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
@@ -31,16 +30,16 @@
   51%, 100% { opacity: 0; }
 }
 
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   background: linear-gradient(135deg, #0F4C75, #3282B8, #1B262C);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
+/* ===== NAVBAR ===== */
 nav {
   background-color: #1C1C1C;
   padding: 15px 30px;
@@ -49,6 +48,10 @@ nav {
   left: 0;
   width: 100%;
   z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
@@ -63,8 +66,8 @@ nav a {
   color: white; 
   font-size: 1.1rem;
   transition: 0.3s; 
-   padding: 8px 16px;        
-   background: transparent;
+  padding: 8px 16px;        
+  background: transparent;
   border-radius: 20px;      
 }
 
@@ -73,6 +76,23 @@ nav a:hover {
   color: #1B262C;
 }
 
+/* BOTÃO HAMBÚRGUER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* ===== PERFIL ===== */
 .foto-perfil {
   width: 250px;
   height: 250px;
@@ -104,7 +124,6 @@ nav a:hover {
   padding-top: 150px;          
 }
 
-
 #home h1 {
   font-size: 3rem;     
   margin-top: 20px;    
@@ -120,29 +139,28 @@ nav a:hover {
 }
 
 .social-icons {
-    display: flex;
-    gap: 20px; 
-    justify-content: center; 
-    margin-top: 15px;
-    
+  display: flex;
+  gap: 20px; 
+  justify-content: center; 
+  margin-top: 15px;
 }
 
 .icon-container {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    color: white;
-    text-align: center;
-    cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
 }
 
 .icon {
-    width: 40px; 
-    border-radius: 8px; 
-    display: block;
-    margin: 0 auto;
-    cursor: pointer;
-    border-radius: 12px;      
-    border: 3px solid white;
+  width: 40px; 
+  border-radius: 8px; 
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 12px;      
+  border: 3px solid white;
 }
 
 .git img {
@@ -151,7 +169,7 @@ nav a:hover {
 
 .git img:hover {
   filter: invert(100%);
-   transform: scale(1.25);
+  transform: scale(1.25);
 }
 
 .linkedin img {
@@ -161,10 +179,11 @@ nav a:hover {
 .linkedin img:hover {
   content: url('linkbranco.png');
   border-color: black; 
-   transform: scale(1.25);
+  transform: scale(1.25);
 }
 
-#sobre{
+/* ===== SOBRE ===== */
+#sobre {
   width: 100%;
   height: 100vh;           
   color: white;
@@ -172,7 +191,7 @@ nav a:hover {
   padding-top: 85px;     
 }
 
-#sobre h1{
+#sobre h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.5em;
   color: white; 
@@ -181,7 +200,7 @@ nav a:hover {
   text-shadow: 0 0 10px rgba(0, 198, 255, 0.7);
 }
 
-#sobre h2{
+#sobre h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 1.3rem;
   letter-spacing: 2px; 
@@ -193,27 +212,19 @@ nav a:hover {
   font-weight: bold; 
   line-height: 1.6; 
   text-align: justify;
-  
 }
 
-
-
-#sobre p{
-
- font-family: 'Roboto', sans-serif;
+#sobre p {
+  font-family: 'Roboto', sans-serif;
   font-weight: 300; 
   font-size: 1.2rem; 
   line-height: 2;
   margin-left: 50px;
   margin-right: 50px;
   text-align: justify;
-  
-
 }
 
-
-
-#sobre h3{
+#sobre h3 {
   font-weight: 300; 
   font-size: 1.2rem; 
   line-height: 1.6; 
@@ -222,19 +233,17 @@ nav a:hover {
   margin-top: 15px;
   margin-bottom: 15px;
   text-align: justify;
-
 }
 
-
-.ajustar{
+/* ===== BALÕES ===== */
+.ajustar {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  
 }
 
-.balao{
+.balao {
   border-radius: 20px;
   padding: 15px;
   margin: 20px;
@@ -242,55 +251,48 @@ nav a:hover {
   max-width: 625px;
   background: rgba(0, 0, 0, 0.4);
   transition: transform 0.3s, box-shadow 0.3s;
-
   opacity: 0;
   transform: translateY(30px);
   animation: aparecer 0.8s ease forwards;
 }
 
 .balao:hover {
-   transform: translateY(-5px);
+  transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 198, 255, 0.4);
 }
 
-.balao a{
+.balao a {
   text-decoration: none;
   color: white;
 }
 
 .balao a:hover {
   text-decoration: underline;
-  color: #BBE1FA;;
+  color: #BBE1FA;
 }
-
 
 .balao p {
-    font-size: 14px;  
-    line-height: 1.6;  
-    margin-bottom: 6px;
+  font-size: 14px;  
+  line-height: 1.6;  
+  margin-bottom: 6px;
 }
 
-
-
-#habilidades{
+/* ===== HABILIDADES ===== */
+#habilidades {
   padding-top: 80px;
   color: white;
-
 }
 
-#habilidades h1{
+#habilidades h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.5em;
   color: white; 
   text-align: center;
   margin-bottom: 40px;
   text-shadow: 0 0 10px rgba(0, 198, 255, 0.7);
-
-
-
 }
 
-#habilidades h2{
+#habilidades h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 1.3rem;
   letter-spacing: 2px; 
@@ -302,15 +304,13 @@ nav a:hover {
   font-weight: bold; 
   line-height: 1.6; 
   text-align: justify;
-
   font-size: 28px;
   border-bottom: 2px solid #ccc;
   padding-bottom: 5px;
   margin-bottom: 20px;
-
 }
 
-#habilidades img{
+#habilidades img {
   width: 150px;
   height: 150px;
   margin: 15px;
@@ -320,12 +320,12 @@ nav a:hover {
 }
 
 #habilidades img:hover {
-   transform: scale(1.1);
-   box-shadow: 0px 0px 15px rgba(255,255,255,0.5);
-   transition: transform 0.3s, box-shadow 0.3s;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px rgba(255,255,255,0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.caixa{
+.caixa {
   background: rgba(0, 0, 0, 0.4);
   margin: 50px;
   padding: 20px;
@@ -336,28 +336,27 @@ nav a:hover {
   animation: aparecer 0.8s ease forwards;
 }
 
-
 @keyframes aparecer {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-.centralizar{
+
+.centralizar {
   text-align: center;
 }
 
-.centralizarCaixa{
+.centralizarCaixa {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: flex-start
 }
 
-
+/* ===== PROJETOS ===== */
 #projetos {
   padding: 85px 50px;
-  
   min-height: 100vh;
 }
 
@@ -421,7 +420,7 @@ nav a:hover {
   line-height: 1.5;
 }
 
-/* Responsividade */
+/* ===== RESPONSIVIDADE ===== */
 @media (max-width: 1000px) {
   .projetos-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -434,27 +433,30 @@ nav a:hover {
   }
 }
 
-
-
-
-
-
-/*celular*/
-
-
+/* MENU RESPONSIVO */
 @media (max-width: 768px) {
   nav ul {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #1C1C1C;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+    width: 200px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    border-radius: 0 0 10px 10px;
+    padding: 0;
   }
 
-  nav {
-    padding: 10px;
+  nav ul.open {
+    height: 200px;
+    padding: 15px;
   }
 
-  nav a {
-    font-size: 1rem;
-    padding: 6px 12px;
+  .hamburger {
+    display: flex;
   }
 }
 
