@@ -101,6 +101,17 @@ nav a:hover {
   }
 }
 
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+  top: 15px;
+  z-index: 1100;
+}
+
 
 
 .foto-perfil {
