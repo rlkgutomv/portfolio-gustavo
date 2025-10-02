@@ -34,10 +34,13 @@ function digitar() {
 
 digitar();
 
-const hamburger = document.querySelector('.hamburger');
-  const navUl = document.querySelector('nav ul');
 
- 
+const hamburger = document.querySelector('.hamburger');
+const navUl = document.querySelector('nav ul');
+
+
+if(hamburger && navUl){
   hamburger.addEventListener('click', () => {
     navUl.classList.toggle('open'); 
   });
+}
