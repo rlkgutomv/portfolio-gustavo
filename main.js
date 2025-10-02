@@ -34,9 +34,11 @@ function digitar() {
 
 digitar();
 
-  const hamburger = document.querySelector('.hamburger');
-  const navLinks = document.querySelector('nav ul');
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('nav ul');
 
+if (hamburger && navLinks) {
   hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('open');
   });
+}
